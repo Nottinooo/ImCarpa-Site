@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ImCarpa — Portfolio</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<script>try{var r=document.referrer;if(!(r&&new URL(r).host===location.host)&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<div id="intro" aria-label="Premi per entrare"><canvas></canvas><p class="intro-hint">premi per entrare</p></div>
+<div class="bg" aria-hidden="true"></div>
+
+<nav class="nav" id="navbar">
+  <a class="nav-logo" href="index.html#hero">ImCarpa<span>.</span></a>
+  <div class="nav-links"><a href="index.html#about">About</a><a href="index.html#skills">Skills</a><a href="index.html#projects">Projects</a><a href="index.html#staff">Staff</a><a href="tool.html">ice_tool</a><a href="index.html#bug">Bug?</a><a href="index.html#socials">Find Me</a></div>
+  <div class="nav-visitor"><span>👁</span><b id="vc-total">&mdash;</b><i></i><span class="dot"></span><b id="vc-online">&mdash;</b></div>
+</nav>
+
+<header id="hero" class="hero">
+  <h1 class="hero-title">ImCarpa</h1>
+  <p class="hero-typed"><span id="typed"></span><span class="cursor-blink">|</span></p>
+  <p class="hero-desc">Developer di 14 anni con 2 anni di esperienza. Bot Discord, server Minecraft, siti web — tutto costruito da zero, tutto fatto bene.</p>
+  <div class="hero-buttons">
+    <a href="#projects" class="btn btn-purple">View Projects</a>
+    <a href="tool.html" class="btn btn-ghost">ice_tool</a>
+    <a href="#socials" class="btn btn-ghost">Find Me</a>
+  </div>
+</header>
+
+<section class="section term-sec"><div class="container">
+  <div class="terminal-window">
+    <div class="terminal-topbar"><span class="t-dot r"></span><span class="t-dot y"></span><span class="t-dot g"></span><span class="t-title">imcarpa.dev ~ terminal</span></div>
+    <div class="terminal-body" id="terminal-body"></div>
+  </div>
+</div></section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">// about me</div>
+      <h2 class="section-title">Chi è <span class="gradient-text">ImCarpa</span>?</h2>
+      <div class="glass-card about-quote reveal">
+        <div class="quote-icon">"</div>
+        <p>
+          Sono un programmatore di 14 anni,
+          cerco di imparare passo dopo passo linguaggi di programmazione e cerco di ampliare
+          le mie competenze.
+          In questi due anni ho progettato qualche bot Discord,
+          server Minecraft e siti web.
+          Procedo per tentativi: creo prototipi semplici, li testo per vedere cosa non va,
+          li sistemo e li pubblico quando sono perfetti.
+          Ogni giorno cerco di sviluppare una mentalità da developer più solida.
+          Continuo a migliorare, un giorno alla volta.
+        </p>
+        <p class="quote-footer">— ImCarpa. 🚀</p>
+      </div>
+      <br>
+      <div class="about-cards">
+        <div class="glass-card about-card reveal">
+          <div class="card-icon">👨‍💻</div>
+          <h3>Developer</h3>
+          <p>Discord, Web e Minecraft developer con 2 anni di esperienza. Scrive codice veloce, pulito, senza compromessi.</p>
+        </div>
+        <div class="glass-card about-card reveal">
+          <div class="card-icon">🤖</div>
+          <h3>Bot Developer</h3>
+          <p>Bot Discord scritti da zero in Python — moderazione, comandi custom, sistemi automatizzati che girano H24.</p>
+        </div>
+        <div class="glass-card about-card reveal">
+          <div class="card-icon">🌐</div>
+          <h3>Web Developer</h3>
+          <p>Siti web fantastici. HTML, CSS, JS — interfacce pulite e funzionali costruite con attenzione al dettaglio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label">// tech stack</div>
+      <h2 class="section-title">Languages &amp; <span class="gradient-text">Tools</span></h2>
+      <div class="skills-grid">
+        <div class="skill-badge reveal" style="--sc:#3776AB;--sc2:#FFD43B">
+          <div class="skill-bar-bg"></div>
+          <img loading="lazy" decoding="async" class="skill-icon" src="linguaggi_logo/Python.png" alt="Python" />
+          <span class="skill-name">Python</span>
+        </div>
+        <div class="skill-badge reveal" style="--sc:#EAD41C;--sc2:#F0DB4F">
+          <div class="skill-bar-bg"></div>
+          <img loading="lazy" decoding="async" class="skill-icon" src="linguaggi_logo/JavaScript.png" alt="JavaScript" />
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill-badge reveal" style="--sc:#E34F26;--sc2:#F06529">
+          <div class="skill-bar-bg"></div>
+          <img loading="lazy" decoding="async" class="skill-icon" src="linguaggi_logo/HTML.png" alt="HTML" />
+          <span class="skill-name">HTML</span>
+        </div>
+        <div class="skill-badge reveal" style="--sc:#264DE4;--sc2:#2965F1">
+          <div class="skill-bar-bg"></div>
+          <img loading="lazy" decoding="async" class="skill-icon" src="linguaggi_logo/CSS.png" alt="CSS" />
+          <span class="skill-name">CSS</span>
+        </div>
+        <div class="skill-badge reveal" style="--sc:#339933;--sc2:#68A063">
+          <div class="skill-bar-bg"></div>
+          <img loading="lazy" decoding="async" class="skill-icon" src="linguaggi_logo/nodejs.png" alt="Node.js" />
+          <span class="skill-name">Node.js</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">// projects</div>
+      <h2 class="section-title">Things I've <span class="gradient-text">Built</span></h2>
+      <div class="projects-grid">
+
+        <div class="glass-card project-card reveal">
+          <div class="project-img-wrap">
+            <img src="discord_logo/All-In/All-In.png" alt="All-In" loading="lazy" />
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Discord</span>
+              <span class="tag">Bot</span>
+              <span class="tag">Community</span>
+            </div>
+            <h3>All-In</h3>
+            <p>Server Discord community con bot personalizzato integrato. Hub per la community, eventi, sistemi custom — costruito da zero, fatto interamente con JavaScript.</p>
+          </div>
+        </div>
+
+        <div class="glass-card project-card reveal">
+          <div class="project-img-wrap">
+            <img src="discord_logo/RealFraMash/RealFraMash.png" alt="Francesco's Bunker" loading="lazy" />
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Discord</span>
+              <span class="tag">Bot</span>
+            </div>
+            <h3>Francesco's Bunker</h3>
+            <p>Server Discord privato con bot sviluppato su misura. Automazioni, comandi custom e sistemi di moderazione costruiti from scratch, fatti interamente con Python.</p>
+          </div>
+        </div>
+
+        <div class="glass-card project-card reveal">
+          <div class="project-img-wrap">
+            <img src="discord_logo/VoltMC/VoltMC.png" alt="VoltMC" loading="lazy" />
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Minecraft</span>
+              <span class="tag">Server</span>
+              <span class="tag">PvP</span>
+            </div>
+            <h3>VoltMC</h3>
+            <p>Server Minecraft PvP con la sua identità unica. Configurazioni custom, plugin e tanto altro!</p>
+          </div>
+        </div>
+        <a href="tool.html" class="glass-card project-card reveal" style="text-decoration:none;color:inherit">
+          <div class="project-img-wrap ice-wrap"><span class="ice-glyph">&gt;_</span><div class="project-img-overlay"></div></div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Terminal</span><span class="tag">OSINT</span></div>
+            <h3>ice_tool</h3>
+            <p>Toolkit da terminale per OSINT, rete e sicurezza. Un solo file Python, tutto il codice è visibile sulla pagina dedicata.</p>
+            <span class="more">Apri il tool →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="staff" class="section">
+    <div class="container">
+      <div class="section-label">// experience</div>
+      <h2 class="section-title">Staff <span class="gradient-text">Experience</span></h2>
+
+      <div class="staff-tabs">
+        <button class="staff-tab active" data-tab="discord">💬 Discord</button>
+        <button class="staff-tab" data-tab="minecraft">⛏️ Minecraft</button>
+      </div>
+
+      <!-- Discord -->
+      <div class="staff-panel active" id="tab-discord">
+        <div class="staff-list">
+
+          <div class="staff-entry reveal" data-img="discord_logo/All-In/All-In.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">01</div>
+                <div class="staff-info">
+                  <span class="staff-server">All-In</span>
+                  <span class="staff-role">Founder</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge active">● Now</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/All-In/All-In.png" alt="All-In" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/ecuEHEf6fM" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-entry reveal" data-img="discord_logo/VoltMC/VoltMC.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">02</div>
+                <div class="staff-info">
+                  <span class="staff-server">VoltMC</span>
+                  <span class="staff-role">Owner</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge active">● Now</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/VoltMC/VoltMC.png" alt="VoltMC" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/GZhMp9Vy3B" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                  <a href="https://www.voltmc.it" class="staff-link" target="_blank" rel="noopener noreferrer">🌐 Sito Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-entry reveal" data-img="discord_logo/Dom1nik/Dom1nik.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">03</div>
+                <div class="staff-info">
+                  <span class="staff-server">Dom1nik</span>
+                  <span class="staff-role">Sr. Admin</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge active">● Now</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/Dom1nik/Dom1nik.png" alt="Dom1nik" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/zD9v2V3m4E" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-entry reveal" data-img="discord_logo/La caverna di Black/La caverna di Black.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">04</div>
+                <div class="staff-info">
+                  <span class="staff-server">La caverna di Black</span>
+                  <span class="staff-role">Admin</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge active">● Now</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/La&#32;caverna&#32;di&#32;Black/La&#32;caverna&#32;di&#32;Black.png" alt="La caverna di Black" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/ydAUguzBp" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-entry reveal" data-img="discord_logo/La caverna di Black/La caverna di Black.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">05</div>
+                <div class="staff-info">
+                  <span class="staff-server">La Ciurma Di Pyrox</span>
+                  <span class="staff-role">Moderator</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge active">● Now</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/ciurma&#32;di&#32;pyro/pyroxciurma.png" alt="La Ciurma Di Pyrox" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/BuzWbRq4Nm" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-entry reveal" data-img="discord_logo/Astral/Astral.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">06</div>
+                <div class="staff-info">
+                  <span class="staff-server">Astral</span>
+                  <span class="staff-role">Co-Founder</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge past">○ Before</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/Astral/Astral.png" alt="Astral" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/RNK3yf7UvD" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                  <a href="https://astralcup.sildev.dev/" class="staff-link" target="_blank" rel="noopener noreferrer">🌐 Sito Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-entry reveal" data-img="discord_logo/Valiance/Valiance.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">07</div>
+                <div class="staff-info">
+                  <span class="staff-server">Valiance</span>
+                  <span class="staff-role">Helper</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge past">○ Before</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/Valiance/Valiance.png" alt="Valiance" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/pdXA5S5TFj" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Minecraft -->
+
+      <div class="staff-panel" id="tab-minecraft">
+        <div class="staff-list">
+
+        <div class="staff-entry reveal" data-img="discord_logo/VoltMC/VoltMC.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">01</div>
+                <div class="staff-info">
+                  <span class="staff-server">VoltMC</span>
+                  <span class="staff-role">Owner</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge active">● Now</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/VoltMC/VoltMC.png" alt="VoltMC" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/GZhMp9Vy3B" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                  <a href="https://www.voltmc.it" class="staff-link" target="_blank" rel="noopener noreferrer">🌐 Sito Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-entry reveal" data-img="discord_logo/Astral/Astral.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">02</div>
+                <div class="staff-info">
+                  <span class="staff-server">AstralMC</span>
+                  <span class="staff-role">Co-Founder</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge past">○ Before</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/Astral/Astral.png" alt="AstralMC" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/RNK3yf7UvD" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                  <a href="https://astralcup.sildev.dev/" class="staff-link" target="_blank" rel="noopener noreferrer">🌐 Sito Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-entry reveal" data-img="discord_logo/IslandMC/IslandMC.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">03</div>
+                <div class="staff-info">
+                  <span class="staff-server">IslandMC</span>
+                  <span class="staff-role">Mod</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge past">○ Before</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/IslandMC/IslandMC.png" alt="IslandMC" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.gg/pQbrG4vkwF" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                  <a href="https://store.islandmc.it" class="staff-link" target="_blank" rel="noopener noreferrer">🌐 Sito Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-entry reveal" data-img="discord_logo/CristoGG/cristogg.png">
+            <div class="staff-row">
+              <div class="staff-left">
+                <div class="staff-num">04</div>
+                <div class="staff-info">
+                  <span class="staff-server">Cristo.gg</span>
+                  <span class="staff-role">Helper</span>
+                </div>
+              </div>
+              <div class="staff-right">
+                <span class="status-badge past">○ Before</span>
+                <span class="staff-chevron">▾</span>
+              </div>
+            </div>
+            <div class="staff-drawer">
+              <div class="staff-drawer-inner">
+                <img loading="lazy" decoding="async" class="staff-badge-logo" src="discord_logo/CristoGG/cristogg.png" alt="Cristo.gg" />
+                <div class="staff-drawer-info">
+                  <a href="https://discord.com/invite/cristogg" class="staff-link" target="_blank" rel="noopener noreferrer">💬 Discord Server</a>
+                  <a href="https://www.cristo.gg" class="staff-link" target="_blank" rel="noopener noreferrer">🌐 Sito Server</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="bug" class="section bug">
+    <div class="container">
+      <div class="section-label">// bug report</div>
+      <h2 class="section-title">Hai trovato un <span class="gradient-text">bug</span>?</h2>
+      <p class="section-subtitle">Scrivimi che lo risolvo.</p>
+      <a class="btn btn-purple big" href="https://discord.gg/4SaA7taAMY" target="_blank" rel="noopener noreferrer">Entra nel Discord</a>
+    </div>
+  </section>
+
+  <section id="socials" class="section">
+    <div class="container">
+      <div class="section-label">// find me</div>
+      <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="section-subtitle">Trovami dove passo il tempo online 🌐</p>
+      <div class="socials-grid">
+        <a href="https://www.tiktok.com/@imcarpa" target="_blank" rel="noopener noreferrer" class="social-btn reveal" style="--s-color:#010101;--s-color2:#69C9D0">
+          <span class="s-icon">🎵</span>
+          <div class="s-info">
+            <strong>TikTok</strong>
+            <small>@imcarpa</small>
+          </div>
+          <span class="s-arrow">→</span>
+        </a>
+        <a href="https://www.twitch.tv/imcarpa_" target="_blank" rel="noopener noreferrer" class="social-btn reveal" style="--s-color:#6441A4;--s-color2:#9146FF">
+          <span class="s-icon">🎮</span>
+          <div class="s-info">
+            <strong>Twitch</strong>
+            <small>imcarpa_</small>
+          </div>
+          <span class="s-arrow">→</span>
+        </a>
+        <a href="https://discord.gg/4SaA7taAMY" target="_blank" rel="noopener noreferrer" class="social-btn reveal" style="--s-color:#5865F2;--s-color2:#7289DA">
+          <span class="s-icon">💬</span>
+          <div class="s-info">
+            <strong>Discord</strong>
+            <small>Join the Server</small>
+          </div>
+          <span class="s-arrow">→</span>
+        </a>
+        <a href="https://namemc.com/profile/ImCarpa" target="_blank" rel="noopener noreferrer" class="social-btn reveal" style="--s-color:#3d7a1e;--s-color2:#8ea07a">
+          <span class="s-icon">⛏️</span>
+          <div class="s-info">
+            <strong>NameMC</strong>
+            <small>ImCarpa</small>
+          </div>
+          <span class="s-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+<footer class="footer"><p>Made with <span class="heart">♥</span> by <span class="gradient-text">ImCarpa</span> · 2026</p><p class="footer-sub">Discord · Minecraft · Web Developer</p></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="intro.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
